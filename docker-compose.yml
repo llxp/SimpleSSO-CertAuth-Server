@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+
+  simplesso-certauth-server:
+    build: .
+    volumes:
+      - ./SimpleSSO-CertAuth-Server:/src/
+    ports:
+      - "3001:3001"
+    restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 60M
+        reservations:
+          cpus: '0.25'
+          memory: 20M

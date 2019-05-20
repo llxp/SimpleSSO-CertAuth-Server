@@ -1,0 +1,9 @@
+
+
+const allowedOrigins = {
+"https://udacity-postgresql-test.northeurope.cloudapp.azure.com:3000": true,
+"https://udacity-postgresql-test.northeurope.cloudapp.azure.com:3001": true,
+"https://udacity-postgresql-test.northeurope.cloudapp.azure.com:3002", true
+};
+
+module.exports = allowedOrigins;
