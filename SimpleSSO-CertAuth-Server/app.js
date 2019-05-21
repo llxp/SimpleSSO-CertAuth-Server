@@ -56,7 +56,7 @@ app.use(cors());
 var MongoDBStore = require('connect-mongodb-session')(session);
 
 var store = new MongoDBStore({
-  uri: 'mongodb://localhost:27017/SimpleSSOServer',
+  uri: config.databaseConfig.databaseUrl,
   collection: 'session'
 });
 
